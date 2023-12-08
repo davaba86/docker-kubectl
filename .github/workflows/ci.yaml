@@ -21,6 +21,3 @@
             uses: hadolint/hadolint-action@v3.1.0
             with:
               dockerfile: Dockerfile
-
-          - name: View Hadolint output
-            run: cat /dev/stdout
