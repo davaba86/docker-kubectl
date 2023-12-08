@@ -20,4 +20,4 @@
         #     uses: actions/checkout@v4
         
           - name: Run Hadolint
-            run: ls -la
+            run: hadolint
