@@ -4,6 +4,8 @@ ENV CURL_VERSION="8.5.0-r0"
 ENV KUBECTL_VERSION="1.28.4"
 
 ENV PROJECT_VERSION="1.0.0"
+ENV PROJECT_AUTHOR="David Abarca"
+ENV PROJECT_EMAIL="david.abarca@mechaconsulting.org"
 
 SHELL ["/bin/ash", "-o", "pipefail", "-c"]
 
@@ -24,5 +26,5 @@ RUN adduser -D worker
 USER worker
 WORKDIR /home/worker
 
-LABEL maintainer="David Abarca david.abarca@mechaconsulting.org" \
+LABEL maintainer="${PROJECT_AUTHOR} ${PROJECT_EMAIL}" \
   version=${PROJECT_VERSION}
