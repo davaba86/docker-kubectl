@@ -9,8 +9,8 @@
       workflow_dispatch:
     
     jobs:
-      build-code:
-        name: Build Code
+      build-and-lint:
+        name: Build and Lint
         runs-on: ubuntu-22.04
     
         steps:
@@ -20,4 +20,5 @@
           - name: Run public Docker image
             uses: docker/run-action@v3
             with:
-              args: --rm -i hadolint/hadolint < Dockerfile
+              args: hadolint Dockerfile
+              image: hadolint/hadolint
