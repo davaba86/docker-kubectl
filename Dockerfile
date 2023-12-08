@@ -3,6 +3,8 @@ FROM alpine:3.18
 ENV CURL_VERSION="8.5.0-r0"
 ENV KUBECTL_VERSION="1.28.4"
 
+ENV PROJECT_VERSION="1.0.0"
+
 SHELL ["/bin/ash", "-o", "pipefail", "-c"]
 
 # Setup prerequisites
@@ -23,4 +25,4 @@ USER worker
 WORKDIR /home/worker
 
 LABEL maintainer="David Abarca david.abarca@mechaconsulting.org" \
-  version="1.0.0"
+  version=${PROJECT_VERSION}
