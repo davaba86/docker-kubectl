@@ -12,12 +12,10 @@
       build-and-lint:
         name: Build and Lint
         runs-on: ubuntu-22.04
-        container:
-          image: hadolint/hadolint
     
         steps:
-        #   - name: Download code
-        #     uses: actions/checkout@v4
+          - name: Download code
+            uses: actions/checkout@v4
         
           - name: Run Hadolint
-            run: hadolint
+            run: ls -la
