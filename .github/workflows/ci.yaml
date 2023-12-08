@@ -19,3 +19,7 @@
         
           - name: Run Hadolint
             run: ls -la
+          
+          - uses: hadolint/hadolint-action@v3.1.0
+            with:
+              dockerfile: Dockerfile
