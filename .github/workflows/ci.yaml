@@ -16,10 +16,11 @@
         steps:
           - name: Download code
             uses: actions/checkout@v4
-        
-          - name: Run Hadolint
-            run: ls -la
           
-          - uses: hadolint/hadolint-action@v3.1.0
+          - name: Run Hadolint
+            uses: hadolint/hadolint-action@v3.1.0
             with:
               dockerfile: Dockerfile
+
+          - name: View output
+            run: cat /dev/stdout
