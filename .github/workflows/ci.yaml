@@ -12,6 +12,7 @@
       build-and-lint:
         name: Build and Lint
         runs-on: ubuntu-22.04
+        environment: prd
     
         steps:
           - name: Download code
