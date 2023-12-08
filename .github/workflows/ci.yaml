@@ -22,5 +22,5 @@
             with:
               dockerfile: Dockerfile
 
-          - name: View output
+          - name: View Hadolint output
             run: cat /dev/stdout

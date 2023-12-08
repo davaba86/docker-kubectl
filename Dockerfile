@@ -3,7 +3,7 @@ FROM alpine:3.18
 ENV CURL_VERSION="8.5.0-r0"
 ENV KUBECTL_VERSION="1.28.4"
 
-SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+# SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 # Setup prerequisites
 RUN apk add --update --no-cache \
