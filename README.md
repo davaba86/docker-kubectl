@@ -1,3 +1,3 @@
 # Docker kubectl
 
-Docker project for Kubernetes.
+Docker image for spawning container when using command kubectl instead of installing locally in OS.
